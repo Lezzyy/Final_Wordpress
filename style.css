@@ -1,0 +1,281 @@
+@@charset "UTF-8";
+
+/*
+
+Theme Name: Tech Blog
+
+Author: Laure-Anne
+
+Author URI:
+
+Version 1.0
+
+Description: Le premier thème WordPress !
+
+*/
+
+body, html {
+  padding:0;
+  margin:0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color:#ffffff;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+  padding:0;
+}
+
+
+
+/*barre de navigation*/
+.navbar-inverse {
+  background-color: #962D3E;
+  border-color: #962D3E;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+  color: #343642;
+}
+
+.navbar-inverse .navbar-nav >li>a {
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.navbar-inverse .navbar-nav >li>a:hover, .navbar-inverse .navbar-nav >li>a:focus {
+  color: #979C9C;
+}
+
+.navbar-inverse .navbar-nav > .active >a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color:#ffffff;
+  background-color: #343642;
+}
+
+.navbar-inverse .navbar-nav >.open>a, .navbar-inverse .navbar-nav >.open> a:hover, .navbar-inverse .navbar-nav >.open> a:focus {
+  color: #ffffff;
+  background-color: #979C9C;
+}
+
+/*Logo*/
+
+.logo {
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #962D3E;
+}
+
+#logo {
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #962D3E;
+}
+
+#date {
+  background-color: none;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+#div_horloge {
+  line-height: 5px;
+}
+
+/*article 1*/
+#content {
+  width: 75%; border: 2px #a2a2a2 solid; float: left;
+}
+
+#ordinateur {
+  width: 100%;
+}
+
+
+.article h2 {
+  text-align: center;
+}
+
+.article p {
+  vertical-align: middle;
+}
+
+.article a {
+  color:#962D3E;
+  font-weight: bold;
+}
+
+#info {
+  background-color: #962D3E;
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+#info a {
+  color: #ffffff;
+  font-size: 1em;
+}
+
+h3
+{
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-custom {
+  background-color: #343642;
+  color: #ffffff;
+}
+
+.btn-custom:hover {
+  color: #ffffff;
+  background-color:#962D3E;
+}
+
+/*article 2*/
+
+#smartphone {
+width : 100%
+}
+
+   /*aside2*/
+   div.tab {
+     overflow: hidden;
+     float: right;
+   }
+
+   #bouton_t, #bouton_l, #bouton_f {
+     width : 90px;
+   }
+
+.tab button {
+  background-color: #343642;
+  border: none;
+  outline:none;
+  cursor:pointer;
+  padding: 14px 16px;
+  margin-top: 10px;
+  color: #ffffff;
+  }
+
+  .tab button:hover {
+    background-color: #962D3E;
+  }
+
+.tab button.active {
+  background-color: #979C9C;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+
+
+
+
+/*article 3 et 4 */
+#appli {
+  width: 84%;
+}
+
+#vr {
+  width: 100%;
+}
+
+/*page périphériques*/
+/*banner*/
+
+#périphériques {
+  width: 100%;
+}
+
+/*page contact*/
+.contact h3 {
+  color : #343642;
+}
+
+.contact p {
+  text-align: center;
+  font-weight: bold;
+  line-height: 5px;
+}
+
+.controls-row {
+  display: block;
+  text-align: center;
+}
+
+input {
+  margin-bottom: 5px;
+  background-color: #979C9C;
+  color: #ffffff;
+}
+
+input [type=text] {
+  height:50px;
+  width: 500px;
+  border: none;
+}
+
+input [type=email] {
+  height:150px;
+  width: 250px;
+  border: none;
+}
+
+textarea {
+  height: 150px;
+  width: 250px;
+  resize: vertical;
+  background-color: #979C9C;
+  color: #ffffff;
+}
+
+/*page*/
+
+#ordi {
+  width: 80%;
+}
+
+/*footer*/
+.footer {
+  background-color: #962D3E;
+  height: 150px;
+  color:#ffffff;
+  margin-top: 20px;
+}
+
+.footer p {
+  line-height: 2px;
+  text-align: center;
+}
+
+@media screen and (max-width:480px)
+{
+  p
+  {
+    font-size: 0.7em;
+  }
+}
