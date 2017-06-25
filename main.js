@@ -1,8 +1,9 @@
 //Chrono
 
+var seconds = 0;
+var el = document.getElementById('chrono');
+
 function incrementSeconds() {
-  var seconds = 0;
-  var el = document.getElementById('chrono');
     seconds += 1;
     el.innerText = "Vous êtes sur la page depuis " + seconds + " secondes.";
 }

@@ -6,11 +6,12 @@
       <div class="container-fluid">
           <nav>
             <ul class="nav navbar-nav">
-              <li class="active"><a href="home.php">Home</a></li>
+              <li><a href="home.php">Home</a></li>
               <li><a href="périphérique.php" target="_blank">Périphériques</a></li>
               <li><a href="applications.php" target="_blank">Applications</a></li>
               <li><a href="nouvelle_tech.php" target="_blank">Nouvelles Tech</a></li>
               <li><a href="contact.php" target="_blank">Contact</a></li>
+              <li><a id="chrono"></a></li>
             </ul>
           </nav>
       </div>
@@ -35,7 +36,6 @@
             </script>
           </div></br>
         <div id="div_horloge"></div>
-        <div id="chrono"></div>
       </aside>
     </section>
   </div>
@@ -50,6 +50,7 @@
        <hr class="separator">
         <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12">
           <a href="#"><u>Périphériques</u></a>
+          <p>Posté le <?php the_time('d/m/Y') ?></p>
           <img src="<?php echo esc_url (get_template_directory_uri() );?>/img/ordinateur.jpg" alt="ordinateur_portable" id="ordinateur" onmouseover="affi_alt()"/>
           <p id="demo"></p>
         </article>
@@ -83,6 +84,7 @@
        <hr class="separator">
         <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12">
           <a href="#"><u>Périphériques</u></a>
+          <p>Posté le <?php the_time('d/m/Y') ?></p>
           <h2>Le HTC U11 échoue son test de durabilité avec un écran fissuré</h2>
           <p>
             Le HTC U11 a été officiellement annoncé au mois de mai, et l’appareil apporte beaucoup d’améliorations et de fonctionnalités à sa gamme de smartphones. Mais s’il excelle, le HTC U11 a récemment été soumis...
@@ -125,6 +127,7 @@
         <hr class="separator">
          <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
            <a href="#"><u>Nouvelles Tech</u></a>
+           <p>Posté le <?php the_time('d/m/Y') ?></p>
            <img src="<?php echo esc_url (get_template_directory_uri() );?>/img/VR.jpg" alt="vr" id="vr">
            <h2>E3 2017 : Sony révèle de bonnes raisons d’acheter le PlayStation VR</h2>
            <p>
@@ -134,6 +137,7 @@
          </article>
          <article class="col-md-5 col-lg-5 col-xs-12 col-sm-12">
           <a href="#"><u>Applications</u></a>
+          <p>Posté le <?php the_time('d/m/Y') ?></p>
            <img src="<?php echo esc_url (get_template_directory_uri() );?>/img/appli.jpg" alt="appli" id="appli" class="img-responsive center-block">
            <h2>Le programme Android Excellence met en exergue les meilleures apps Android</h2>
            <p>
