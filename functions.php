@@ -17,5 +17,9 @@ function theme_js(){
 wp_enqueue_script( 'javascript', get_template_directory_uri() . '/main.js', false );
 
 }
-
 add_action( 'wp_enqueue_scripts', 'theme_js' );
+
+
+register_nav_menus( array(
+        'Top' => 'Navigation principale',
+    ) );

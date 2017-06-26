@@ -36,7 +36,10 @@ h1 {
   padding:0;
 }
 
-
+.menu {
+  background-color: #343642;
+  margin : 0;
+}
 
 /*barre de navigation*/
 .navbar-inverse {
