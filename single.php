@@ -13,18 +13,18 @@
      <div class="container">
        <div class="row">
          <hr class="separator">
-          <article class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-            <a href="#"><u>Périphériques</u></a></br>
+          <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
             <p>Posté le <?php the_time('d/m/Y') ?></p>
             <img src="<?php echo esc_url (get_template_directory_uri() );?>/img/ordinateur.jpg" alt="ordinateur_portable" id="ordinateur" onmouseover="affi_alt()"class="img-responsive center-block"/>
-          </article>
+          </div>
+          <?php while(have_posts()) : the_post();?>
           <article class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-            <h2>Après Microsoft, Apple, Xiaomi met à jour sa gamme d’ordinateurs Mi Notebook Air</h2>
+            <h2><?php the_title(); ?></h2>
             <p>
-              Microsoft a récemment publié ses nouveaux ordinateurs Surface Pro et Surface Laptop avec du matériel de dernière génération, et maintenant d’autres fabricants modernisent leurs appareils avec de nouvelles puces, davantage de mémoire vive (RAM)...
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <?php the_content(); ?>
             </p>
+          </article>
+          <?php endwhile; ?>
           </div>
         </div>
       </section>
